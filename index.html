@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+<body>
+  <div class="blob b1"></div>
+  <div class="blob b2"></div>
+
+  <header class="navbar">
+    <a href="#home" class="logo">Minahil<span>Ghaznavi</span></a>
+    <nav>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#projects">Projects</a></li>
+      </ul>
+    </nav>
+    <div>
+      <button class="theme-btn" id="themeBtn" title="Change theme">☀️</button>
+      <button class="menu-btn" id="menuBtn">☰</button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ================= HOME ================= -->
+    <section id="home" class="hero">
+      <div class="hero-text">
+        <p class="hello fade-in d1">Hello, I'm</p>
+        <h1 class="fade-in d2"><span class="grad">Minahil Ghaznavi</span><br>Web Developer &amp; Designer</h1>
+        <p class="fade-in d3">
+          I build clean, modern and easy-to-use websites. I enjoy turning ideas into
+          real projects and I am always learning something new to grow my skills.
+        </p>
+        <div class="fade-in d4">
+          <a href="#projects" class="btn">View Projects</a>
+          <a href="#about" class="btn outline">About Me</a>
+        </div>
+      </div>
+
+      <div class="photo-wrap fade-in d2">
+        <div class="photo-frame">
+          <!-- APNI PICTURE YAHAN LAGAYEIN:
+               Apni photo ko is folder mein "profile.jpg" naam se save karein.
+               Ya neeche src="profile.jpg" ko apni file ke naam se badal dein. -->
+          <img src="image.png" alt="My picture"
+               onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="photo-fallback"><br>(profile.jpg)</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ABOUT ================= -->
+    <section id="about">
+      <div class="section-head">
+        <h1 class="page-title">About Me</h1>
+        <p class="page-sub">A little bit about who I am</p>
+      </div>
+      <div class="grid">
+        <div class="card reveal">
+          <h3>Who am I?</h3>
+          <p>Hi! I am a passionate student and creative learner who loves technology, design and problem solving.</p>
+          <p>I like to build things that look good and work well. I enjoy working on real projects, learning from mistakes and improving every day.</p>
+        </div>
+        <div class="card reveal">
+          <h3>Personal Info</h3>
+          <ul class="info-list">
+            <li><b>Name:</b> Minahil Ghaznavi</li>
+            
+            <li><b>City:</b> Karachi, Pakistan</li>
+            <li><b>Email:</b>minahilgaznavi@gmail.com</li>
+            <li><b>Languages:</b> Urdu, English</li>
+          </ul>
+        </div>
+        <div class="card reveal">
+          <h3>Interests</h3>
+          <p>Outside of studies and work, these are the things I enjoy the most:</p>
+          <div class="tags"><span>Web Design</span><span>Reading</span><span>Photography</span><span>Travelling</span><span>Stitching</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SKILLS ================= -->
+    <section id="skills">
+      <div class="section-head">
+        <h1 class="page-title">Skills</h1>
+        <p class="page-sub">What I am good at</p>
+      </div>
+      <div class="grid">
+        <div class="card reveal">
+          <h3>Technical Skills</h3>
+          <div class="skill">
+            <div class="skill-top"><span>HTML</span><span>90%</span></div>
+            <div class="bar"><span data-level="90"></span></div>
+          </div>
+          <div class="skill">
+            <div class="skill-top"><span>CSS</span><span>85%</span></div>
+            <div class="bar"><span data-level="85"></span></div>
+          </div>
+          <div class="skill">
+            <div class="skill-top"><span>JavaScript</span><span>70%</span></div>
+            <div class="bar"><span data-level="70"></span></div>
+          </div>
+          <div class="skill">
+            <div class="skill-top"><span>Responsive Design</span><span>85%</span></div>
+            <div class="bar"><span data-level="85"></span></div>
+          </div>
+          <!-- <div class="skill">
+            <div class="skill-top"><span>UI / UX Design</span><span>75%</span></div>
+            <div class="bar"><span data-level="75"></span></div>
+          </div> -->
+        </div>
+        <!-- <div class="card reveal">
+          <h3>Soft Skills</h3>
+          <p>Skills that help me work well with other people:</p>
+          <div class="tags"><span>Communication</span><span>Teamwork</span><span>Time Management</span><span>Problem Solving</span><span>Creativity</span><span>Adaptability</span></div>
+          <h3>Tools I Use</h3>
+          <div class="tags"><span>VS Code</span><span>Figma</span><span>Canva</span><span>Git &amp; GitHub</span><span>Microsoft Office</span></div>
+        </div>
+      </div> -->
+    </section>
+
+    <!-- ================= EDUCATION ================= -->
+    <section id="education">
+      <div class="section-head">
+        <h1 class="page-title">Education</h1>
+        <p class="page-sub">My learning journey</p>
+      </div>
+      <div class="timeline">
+        <div class="card reveal">
+          <p class="year">2023 - 2027</p>
+          <h3>Bachelor's Degree (BS)</h3>
+          <p><b>Last year Student</b></p>
+          <p>Studying my major subjects, working on semester projects and taking part in university activities.</p>
+        </div>
+        <div class="card reveal">
+          <p class="year">2020 - 2022</p>
+          <h3>Intermediate
+        </h3>
+          <p><b>CAA MODEL COLLAGE</b></p>
+          <p>Pre Medical</p>
+        </div>
+        <div class="card reveal">
+          <p class="year"></p>
+          <h3>Internship</h3>
+          <p><b>Code Alpha</b></p>
+          <p>Completed my Internship at Code Alpha as a frontEnd Developer and have built three projects there using Html CSS and Jaavascript.</p>
+        </div>
+        <div class="card reveal">
+          <p class="year">2025</p>
+          <h3>Courses</h3>
+          <p><b></b></p>
+          <p>CIT</p>
+          <P>Web and App Developement(student)</P>
+      </div>
+    </section>
+
+    <!-- ================= PROJECTS ================= -->
+    <section id="projects">
+      <div class="section-head">
+        <h1 class="page-title">Projects</h1>
+        <p class="page-sub">Some of the things I have built</p>
+      </div>
+      <div class="grid">
+        <div class="card hoverable reveal">
+          <!-- Project ki picture lagane ke liye neeche wali line ko aise badal dein:
+               <div class="thumb"><img src="project1.jpg" alt="Personal Portfolio Website"></div> -->
+          <div class="thumb"> <img src ="Screenshot (483).png"></div>
+          <h3>Personal Portfolio Website</h3>
+          <p>A responsive portfolio website with dark and light themes, smooth scrolling and animations to show my work and skills.</p>
+          <div class="tags"><span>HTML</span><span>CSS</span></div>
+          <a href="https://latestportfolioneww.netlify.app/" class="link">View Project</a>
+        </div>
+        <div class="card hoverable reveal">
+          <!-- Project ki picture lagane ke liye neeche wali line ko aise badal dein:
+               <div class="thumb"><img src="project2.jpg" alt="Online Store Design"></div> -->
+          <div class="thumb"> <img src ="Screenshot (482).png"></div>
+          <h3>Image Gallery</h3>
+          <p>"A visually stunning and fully responsive image gallery built using HTML, CSS, and JavaScript. It features clean grid layouts and smooth interactivity to provide a seamless user browsing experience.</p>
+          <div class="tags"><span>HTML</span><span>CSS</span> <span> Javascript</span></div>
+          <a href="https://imageprojec.netlify.app/" class="link">View Project</a>
+        </div>
+        <div class="card hoverable reveal">
+          <!-- Project ki picture lagane ke liye neeche wali line ko aise badal dein:
+               <div class="thumb"><img src="project3.jpg" alt="Task Manager App"></div> -->
+          <div class="thumb"> <img src ="Screenshot (481).png"></div>
+          <h3>University Project</h3>
+          <p>"A multi-page university website concept featuring seamless internal navigation between two main pages. Built with HTML and CSS, this project highlights clean layout structuring, modern UI elements, and a smooth user flow."</p>
+          <div class="tags"><span>HTML</span><span>CSS</span></div>
+          <a href="https://minahilaiproject.netlify.app/" class="link">View Project</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+</body>
+</html>
